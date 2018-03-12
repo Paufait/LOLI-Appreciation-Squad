@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paulo's Project</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="icon" href="favicon1.ico" type="image/x-icon"> 
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>First Street Steps</h1>
+	</div>
+		<span id="nav">
+		<ul>
+			<li><a href="Home.html">home</a></li>
+			<li><a href="Brands.html">brands</a></li>
+			<li><a href="Palewave.html">inspo albums</a></li>
+			<li><a href="Guides.html">guides</a></li>
+			<li><a href="Contact.html">contact us</a></li>	
+		</ul>
+		</span>
+		<span id="right">
+		<ul>
+			<li><a href="Palewave.html">Palewave</a></li>
+			<li><a href="Techwear.html">Techwear</a></li>
+			<li><a href="Hypebeast.html">Hypebeast</a></li>
+		</ul>
+		</span>	
+<div id="center">
+	<h2>Hypebeast</h2>
+	<p class="brand_para">
+		The first aesthetic to come to mind when discussing streetwear, Hypebeast is a style which revolves around the brands of clothing being worn. Rather than emphasizing on a particular style or colour scheme, the aesthetic emphasizes on the hype and price of the pieces. Brands such as Supreme, Off-White, Vlone, Yeezy, and Bape are worn by popular celebrities, causing an increase in demand which in turn increases pricing within the second-hand market.
+	</p>
+			<div id="album">
+  	<img class="mySlides" width="300px" height="400px" src="assets/hypebeast/1.jpg">
+  	<img class="mySlides" width="300px" height="400px" src="assets/hypebeast/2.jpg" >
+  	<img class="mySlides" width="300px" height="400px" src="assets/hypebeast/3.jpg" >
+ 	<img class="mySlides" width="300px" height="400px" src="assets/hypebeast/4.jpg" >
+ 	<img class="mySlides" width="300px" height="400px" src="assets/hypebeast/5.jpg" >
+  	<button class="button button-left" onclick="changeDivs(-1)">&#10094;</button>
+  	<button class="button button-right" onclick="changeDivs(1)">&#10095;</button>
+</div>
+</div>
+		<div id="footer">
+			All Content is ©Copyright 2017-2018.
+		</div>
+</div>
+<script>
+	var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function changeDivs(n) {
+ 		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  		var i;
+ 		var x = document.getElementsByClassName("mySlides");
+ 		if (n > x.length) {slideIndex = 1}    
+ 		if (n < 1) {slideIndex = x.length}
+ 		for (i = 0; i < x.length; i++) {
+   		x[i].style.display = "none";  
+  		}
+  		x[slideIndex-1].style.display = "block";  
+	}
+</script>
+</body>
+</html>

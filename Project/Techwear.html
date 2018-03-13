@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paulo's Project</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="icon" href="favicon1.ico" type="image/x-icon"> 
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>First Street Steps</h1>
+	</div>
+		<span id="nav">
+		<ul>
+			<li><a href="Home.html">home</a></li>
+			<li><a href="Brands.html">brands</a></li>
+			<li><a href="Palewave.html">inspo albums</a></li>
+			<li><a href="Guides.html">guides</a></li>
+			<li><a href="Contact.html">contact us</a></li>	
+		</ul>
+		</span>
+		<span id="right">
+		<ul>
+			<li><a href="Palewave.html">Palewave</a></li>
+			<li><a href="Techwear.html">Techwear</a></li>
+			<li><a href="Hypebeast.html">Hypebeast</a></li>
+		</ul>
+		</span>	
+<div id="center">
+	<h2>Techwear</h2>
+	<p class="brand_para">
+		A controversial aesthetic, Techwear emphasizes a futuristic look combined with technical benefits to everyday life. Created with special fabrics and unique construction, Techwear pieces allow for more breathability, water-resistance and comfort. The difficulty with Techwear is its unique look. Often not modeled for a typical 9-5 job or casual dinner, but rather if you were a ninja that traveled from the future. The special fabric and construction also guarantees a fairly expensive price tag. Creating a wardrobe with some of the most well known brands such as Stone Island, Goretex, ACRONYM, and Y-3, you can find yourself spending over $1000 for a pair of pants, let alone a single fit. 
+	</p>
+			<div id="album">
+  	<img class="mySlides" src="assets/techwear/1.jpg">
+  	<img class="mySlides" src="assets/techwear/2.jpg" >
+  	<img class="mySlides" src="assets/techwear/3.jpg" >
+ 	<img class="mySlides" src="assets/techwear/4.jpg" >
+ 
+  	<button class="button button-left" onclick="changeDivs(-1)">&#10094;</button>
+  	<button class="button button-right" onclick="changeDivs(1)">&#10095;</button>
+</div>
+</div>
+		<div id="footer">
+			All Content is ©Copyright 2017-2018.
+		</div>
+</div>
+<script>
+	var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function changeDivs(n) {
+ 		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  		var i;
+ 		var x = document.getElementsByClassName("mySlides");
+ 		if (n > x.length) {slideIndex = 1}    
+ 		if (n < 1) {slideIndex = x.length}
+ 		for (i = 0; i < x.length; i++) {
+   		x[i].style.display = "none";  
+  		}
+  		x[slideIndex-1].style.display = "block";  
+	}
+</script>
+</body>
+</html>

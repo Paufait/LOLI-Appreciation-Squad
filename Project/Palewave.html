@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Paulo's Project</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="icon" href="favicon1.ico" type="image/x-icon"> 
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>First Street Steps</h1>
+	</div>
+		<span id="nav">
+		<ul>
+			<li><a href="Home.html">home</a></li>
+			<li><a href="Brands.html">brands</a></li>
+			<li><a href="Palewave.html">inspo albums</a></li>
+			<li><a href="Guides.html">guides</a></li>
+			<li><a href="Contact.html">contact us</a></li>	
+		</ul>
+		</span>
+		<span id="right">
+		<ul>
+			<li><a href="Palewave.html">Palewave</a></li>
+			<li><a href="Techwear.html">Techwear</a></li>
+			<li><a href="Hypebeast.html">Hypebeast</a></li>
+		</ul>
+		</span>	
+<div id="center">
+	<h2>Palewave</h2>
+	<p class="brand_para">
+		A style which becomes more popular during the summer, the Palewave aesthetic revolves around light, pale colours in order to show off a relaxed or comfortable vibe. Desaturated, minimalistic pieces such as lightwash jeans, light pastelle-coloured tees and white shoes such as Adidas Stan Smiths are staples in a Palewave wardrobe. With its minimal need to show labeling or branding, the Palewave aesthetic is quite inexpensive to portray.
+	</p>
+	<div id="album">
+  	<img class="mySlides" src="assets/palewave/2.jpg" >
+  	<img class="mySlides" src="assets/palewave/3.jpg" >
+ 	<img class="mySlides" src="assets/palewave/4.jpg" >
+ 	<img class="mySlides" src="assets/palewave/5.jpg" >
+ 	<img class="mySlides" src="assets/palewave/6.jpg" >
+
+  	<button class="button button-left" onclick="changeDivs(-1)">&#10094;</button>
+  	<button class="button button-right" onclick="changeDivs(1)">&#10095;</button>
+</div>
+</div>
+		<div id="footer">
+			All Content is ©Copyright 2019-2020.
+		</div>
+</div>
+<script>
+	var slideIndex = 1;
+		showDivs(slideIndex);
+
+	function changeDivs(n) {
+ 		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  		var i;
+ 		var x = document.getElementsByClassName("mySlides");
+ 		if (n > x.length) {slideIndex = 1}    
+ 		if (n < 1) {slideIndex = x.length}
+ 		for (i = 0; i < x.length; i++) {
+   		x[i].style.display = "none";  
+  		}
+  		x[slideIndex-1].style.display = "block";  
+	}
+</script>
+</body>
+</html>

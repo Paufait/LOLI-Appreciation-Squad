@@ -8,7 +8,7 @@
 		const xhr = new XMLHttpRequest();
 		xhr.open( 'GET', url, true );
 		xhr.onerror = function( xhr ) { console.log( 'error:', xhr  ); };
-		xhr.onprogress = function( xhr ) { console.log( 'bytes loaded:', xhr.loaded  ); }; /// or something
+		xhr.onprogress = function( xhr ) { console.log( 'bytes loaded:', xhr.loaded  ); };
 		xhr.onload = callback;
 		xhr.send( null );
 		function callback( xhr ) {

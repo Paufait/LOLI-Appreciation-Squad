@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LOLIS Homepage</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="icon" href="favicon1.ico" type="image/x-icon"> 
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+</head>
+
+
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>LOLIS - Live Online Listing Investement Services</h1>
+		 <div class="dropcontainer" onclick="dropdownList(this)">		 	
+  			<img src="assets/dropdown.png" width="20px" height="30px" alt="" >
+  		</div>
+  	</div>	
+	<span id="navright">
+		<div id="myDropdown" class="dropdown-content">
+    		<span id="navright">
+				<ul>
+				<li><a href="Stock1.html">portfolio</a></li>
+				<li><a href="Account.html">Account</a></li>
+				<li><a href="Login.html">sign out</a></li>			
+				</ul>
+			</span>	
+  		</div>
+	</span>
+	<span id="navleft">
+				<ul>
+				<li><a href="Stock1.html">Stock 1</a></li>
+				<li><a href="Stock2.html">Stock 2</a></li>	
+				<li><a href="Stock3.html">Stock 3</a></li>	
+				<li><a href="Stock4.html">Stock 4</a></li>	
+				<li><a href="Stock5.html">Stock 5</a></li>			
+				</ul>
+	</span>
+	<div id="center">
+		<div class="middle">
+			<h2 id="name">Stock1</h2>
+				<div class="stockcontainer">
+    				<label for="stockname"><b>Name of Stock:</b></label>
+    				<input type="text" placeholder="" id="stockname" name="stockname" required>
+
+    				<label for="rule1"><b>Rule 1:</b></label>
+    				<input type="text" placeholder="" name="rule1" required>
+    				<label for="rule2"><b>Rule 2:</b></label>
+    				<input type="text" placeholder="" name="rule2" required>
+    				<label for="rule3"><b>Rule 3:</b></label>
+    				<input type="text" placeholder="" name="rule3" required>
+    				<label for="rule4"><b>Rule 4:</b></label>
+    				<input type="text" placeholder="" name="rule4" required>
+    				<label for="rule5"><b>Rule 5:</b></label>
+    				<input type="text" placeholder="" name="rule5" required>
+
+    				<button onclick="save(this)">Save</button>
+  				</div>
+  			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<script>
+function dropdownList() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function save() {
+	document.getElementById("name").innerHTML = document.getElementById("stockname").value;
+}
+</script>
+</html>

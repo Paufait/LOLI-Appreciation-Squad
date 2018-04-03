@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LOLIS Homepage</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="global.css" />
+<link rel="icon" href="favicon1.ico" type="image/x-icon"> 
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+</style>
+</head>
+
+
+
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1>LOLIS - Live Online Listing Investement Services</h1>
+		 <div class="dropcontainer" onclick="myFunction(this)">		 	
+  			<img src="assets/dropdown.png" width="20px" height="30px" alt="" >
+  		</div>
+  	</div>	
+	<span id="navright">
+		<div id="myDropdown" class="dropdown-content">
+    		<span id="navright">
+				<ul>
+				<li><a href="Stock1.html">portfolio</a></li>
+				<li><a href="Account.html">Account</a></li>
+				<li><a href="Login.html">sign out</a></li>			
+				</ul>
+			</span>	
+  		</div>
+	</span>
+	<div id="center">
+		<div class="middle">
+			<h2>Login</h2>
+				<div class="container">
+				<form action="login.php" method="post">
+    				<label for="username"><b>Username</b></label>
+    				<input type="text" placeholder="Enter Username" name="username" required>
+
+    				<label for="password"><b>Password</b></label>
+    				<input type="password" placeholder="Enter Password" name="password" required>
+
+    				<button type="submit">Login</button>
+				</form>	
+  				</div>
+		</div>
+	</div>
+</div>
+</body>
+
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+</html>
